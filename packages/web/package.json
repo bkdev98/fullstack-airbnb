@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@abb/web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,9 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "2.16.0",
-    "yup": "^0.26.0"
+    "yup": "^0.26.0",
+    "@abb/common": "1.0.0",
+    "@abb/controller": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",

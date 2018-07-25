@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { RegisterController } from '@abb/controller';
+
 import { RegisterView } from './views/RegisterView';
 
 export class RegisterConnector extends React.PureComponent {
@@ -10,6 +12,8 @@ export class RegisterConnector extends React.PureComponent {
 
   render() {
     return (
-      <RegisterView submit={this.dummySubmit} />
+      <RegisterController>
+        {({ submit }) => <RegisterView submit={submit} />}
+      </RegisterController>
     );
 }}
